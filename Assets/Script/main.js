@@ -180,7 +180,7 @@
             document.getElementById("dark-button").style.borderColor = "grey";
             document.getElementById("dark-body").style.backgroundColor = "grey";
             document.body.classList.remove('dark');
-            document.getElementById("Logo").src = "/Assets/Image/Logo/Light-logo.png";
+            document.getElementById("Logo").src = "Assets/Image/Logo/Light-logo.png";
             sessionStorage.setItem('dark', 0);
         } else {
             Tenabled = true;
@@ -191,7 +191,7 @@
             document.getElementById("dark-body").style.backgroundColor = "#3fbbc0";
             document.body.classList.add('dark');
             sessionStorage.setItem('dark', 1);
-            document.getElementById("Logo").src = "/Assets/Image/Logo/Dark-logo.png";
+            document.getElementById("Logo").src = "Assets/Image/Logo/Dark-logo.png";
         }
     }
 
@@ -204,7 +204,7 @@
             document.getElementById("dark-button").style.borderColor = "#3fbbc0";
             document.getElementById("dark-body").style.backgroundColor = "#3fbbc0";
             document.body.classList.add('dark');
-            document.getElementById("Logo").src = "/Assets/Image/Logo/Dark-logo.png";
+            document.getElementById("Logo").src = "Assets/Image/Logo/Dark-logo.png";
         }
     });
 

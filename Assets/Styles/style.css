@@ -541,17 +541,14 @@ body.dark {
 */
 
 .mobile-nav-toggle {
-    font-family: "Roboto", sans-serif;
     width: 35px;
     height: 35px;
-    margin-left: 10px;
-    display: inline-block;
+    margin-left: 5px;
+    display: none;
     padding: 5px;
+    font-size: 20px;
     border-radius: 50%;
     transition: 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #fff;
     background-color: var(--Main-color);
 }
@@ -563,6 +560,8 @@ body.dark {
 @media (max-width: 991px) {
     .mobile-nav-toggle {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .navbar ul {
         display: none;

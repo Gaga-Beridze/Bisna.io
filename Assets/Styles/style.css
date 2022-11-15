@@ -375,6 +375,9 @@ body.dark {
         max-height: 30px !important;
         margin-left: 10px;
     }
+    #header.menus {
+        border-radius: 10px !important;
+    }
 }
 
 #header.header-scrolled {

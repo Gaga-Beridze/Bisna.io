@@ -355,21 +355,25 @@ body.dark {
     background: var(--bg-color-1);
     transition: all 0.5s;
     z-index: 997;
-    padding: 10px 0;
+    padding: 15px 0;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     color: var(--text-color-1);
 }
 
 #header.menus {
-    width: 98%;
+    width: 95%;
     margin: auto;
-    top: 15px;
+    top: 10px;
     border-radius: 20px;
 }
 
 @media (max-width: 992px) {
     #header {
-        padding: 9px 0;
+        padding: 10px 0;
+    }
+    .logo img {
+        max-height: 30px !important;
+        margin-left: 10px;
     }
 }
 

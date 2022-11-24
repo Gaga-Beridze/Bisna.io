@@ -166,6 +166,20 @@
     }
 
     /**
+     *  search
+    */
+     const search = document.getElementById("search-btn");
+     search.addEventListener("click", search_box);
+ 
+     function search_box() {
+         if ( document.getElementById("search").classList.contains('search-box')) {
+            document.getElementById("search").classList.remove('search-box');
+         } else {
+            document.getElementById("search").classList.add('search-box');
+         }
+    }
+
+    /**
      * dark mode button
      */
     let Tenabled = false;
@@ -207,6 +221,19 @@
             document.getElementById("Logo").src = "Assets/Image/Logo/Dark-logo.png";
         }
     });
+
+
+    const cta = select("#cta-bb");
+    cta.addEventListener("click", cta_btn);
+
+    function cta_btn() {
+        if (document.getElementById("cta").classList.contains('moo')) {
+            document.getElementById("cta").classList.remove('moo');
+        } else {
+            document.getElementById("cta").classList.add('moo');
+        }
+    }
+
 
     /**
      * Navigation-Mode
@@ -290,54 +317,70 @@
         }
     });
 
-    /**
-     * Clients Slider
+     /**
+     * guide slider
      */
-    new Swiper('.gallery-slider', {
-        speed: 400,
+      var swiper = new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
         loop: true,
-        centeredSlides: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        slidesPerView: 'auto',
+        centerSlide: 'true',
+        fade: 'true',
+        grabCursor: 'true',
         pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
         },
-        breakpoints: {
-            320: {
+        navigation: {
+          nextEl: ".swiper-button-np",
+          prevEl: ".swiper-button-pp",
+        },
+    
+        breakpoints:{
+            0: {
                 slidesPerView: 1,
-                spaceBetween: 20
             },
-            640: {
+            520: {
+                slidesPerView: 2,
+            },
+            950: {
                 slidesPerView: 3,
-                spaceBetween: 20
             },
-            992: {
-                slidesPerView: 5,
-                spaceBetween: 20
-            }
-        }
-    });
+        },
+      });
 
-    /**
-     * Animation on scroll
+           /**
+     * autocar slider
      */
-    window.addEventListener('load', () => {
-        AOS.init({
-            duration: 1000,
-            easing: 'ease-in-out',
-            once: true,
-            mirror: false
-        })
-    });
-
-    /**
-     * Initiate Pure Counter 
-     */
-    new PureCounter();
+            var swiper = new Swiper(".slide-contents", {
+                slidesPerView: 3,
+                spaceBetween: 25,
+                loop: true,
+                centerSlide: 'true',
+                fade: 'true',
+                grabCursor: 'true',
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                  dynamicBullets: true,
+                },
+                navigation: {
+                  nextEl: ".swiper-b-n",
+                  prevEl: ".swiper-b-p",
+                },
+            
+                breakpoints:{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    520: {
+                        slidesPerView: 2,
+                    },
+                    950: {
+                        slidesPerView: 3,
+                    },
+                },
+              });
 
 })()

@@ -9,6 +9,7 @@
     --text-color-1: #444;
     --text-color-2: #666;
     --bg-color-1: #fff;
+    --bg-color-1-hero: rgba(255, 255, 255, 0.562);
     --bg-color-2: #eee;
     --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     --hover: #41a8ac;
@@ -97,6 +98,7 @@ body.dark {
     --text-color-1: #fff;
     --text-color-2: #eee;
     --bg-color-1: #222831;
+    --bg-color-1-hero: #222831ab;
     --bg-color-2: #393E46;
     --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .4);
     --line: rgb(78, 78, 78);
@@ -277,6 +279,10 @@ body.dark {
 @media screen and (max-width: 768px) {
     [data-aos-delay] {
         transition-delay: 0 !important;
+    }
+
+    .contact .php-email-form{
+        margin-top: 15px !important;
     }
 }
 
@@ -769,7 +775,7 @@ body.dark {
 
 #hero .container {
     text-align: center;
-    background: var(--bg-color-2);
+    background: var(--bg-color-1-hero);
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 50px;
@@ -958,6 +964,7 @@ section {
 .section-title p {
     margin-bottom: 0;
     font-family: "BPG Rioni Vera", sans-serif;
+    color: var(--text-color-1);
 }
 
 
@@ -1036,7 +1043,7 @@ section {
     transition: all 0.3s ease-in-out;
     border-radius: 20px;
     z-index: 1;
-    color: var(--text-color-1);
+    color: #fff !important;
 }
 
 .featured-services .icon-box::before {
@@ -1052,7 +1059,7 @@ section {
 }
 
 .featured-services .icon-box:hover::before {
-    background: #3fbbc0;
+    background: var(--Main-color);
     top: 0;
     border-radius: 0px;
 }
@@ -1072,6 +1079,7 @@ section {
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
+    color: #fff;
 }
 
 .featured-services .title a {
@@ -1083,17 +1091,22 @@ section {
     line-height: 28px;
     margin-bottom: 0;
     color: var(--text-color-1);
+    text-align: left;
 }
 
 .featured-services .icon-box:hover .title a,
 .featured-services .icon-box:hover .description {
-    color: var(--text-color-1);
+    color: #fff;
 }
 
 .featured-services .icon-box:hover .icon i {
-    color: var(--text-color-1);
+    color: #fff;
 }
 
+.t-2 i
+{
+    font-size: 10px !important;
+}
 
 /*--------------------------------------------------------------
 # Cta
@@ -2170,6 +2183,11 @@ section {
     width: calc(100% - 110px);
     border-radius: 10px;
     background-color: var(--bg-color-1);
+    color: var(--text-color-1);
+}
+
+
+#footer .footer-top .footer-newsletter form input[type=email]::placeholder {
     color: var(--text-color-1);
 }
 

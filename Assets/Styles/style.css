@@ -2246,7 +2246,7 @@ section {
     margin-top: 7vh;
 	min-height:670px;
 	position:relative;
-	background-color: var(--bg-color-1);
+    background-color: var(--bg-color-1-hero);
     object-fit: cover;
 	box-shadow:0 12px 15px 0 rgba(0,0,0, 0.096),0 17px 50px 0 rgba(0,0,0, 0.096);
     border-radius: 15px;
@@ -2256,7 +2256,7 @@ section {
 	height:100%;
 	position:absolute;
 	padding:30px 70px 50px 70px;
-	background: var(--bg-color-1);
+    background-color: var(--bg-color-1-hero);
     box-shadow:0 12px 15px 0 rgba(0, 0, 0, 0.096),0 17px 50px 0 rgba(0,0,0, 0.096);
     border-radius: 15px;
 }

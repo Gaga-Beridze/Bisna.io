@@ -284,6 +284,15 @@ body.dark {
     .contact .php-email-form{
         margin-top: 15px !important;
     }
+
+    .ma-struc{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .login-wrap {
+        width: 95%;
+    }
 }
 
 

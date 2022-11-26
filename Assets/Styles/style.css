@@ -285,11 +285,6 @@ body.dark {
         margin-top: 15px !important;
     }
 
-    .ma-struc{
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
     .login-wrap {
         width: 95%;
     }
@@ -2327,6 +2322,11 @@ section {
     border: none;
   }
 
+  .modal-content, .modal-header
+  {
+    border-radius: 20px !important;
+  }
+
   .er
   {
     background-color: var(--bg-color-2);
@@ -2538,6 +2538,7 @@ section {
   
     .right-panel {
       grid-row: 3 / 4;
+      margin-bottom: -35px;
     }
   
     .left-panel {
@@ -2630,7 +2631,7 @@ section {
     }
   
     .containerww.sign-up-mode:before {
-      bottom: 28%;
+      bottom: 25%;
       left: 50%;
     }
   }

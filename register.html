@@ -28,65 +28,122 @@
     <link href="Assets/Styles/style.css" rel="stylesheet">
 
     <body class="ma-struc">
-        <div class="login-wrap">
-            <div class="login-html">
-                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">შესვლა</label>
-                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">რეგისტრაცია</label>
-                <div class="login-form">
-                    <div class="sign-in-htm">
-                        <div class="group">
-                            <label for="user" class="label">ელფოსტის მისამართი</label>
-                            <input id="user" type="email" class="input">
-                        </div>
-                        <div class="group">
-                            <label for="pass" class="label">პაროლი</label>
-                            <input id="pass" type="password" class="input" data-type="password">
-                        </div>
-                        <div class="group">
-                            <input type="submit" class="button" value="შესვლა">
-                        </div>
+     
+        <div class="containerww">
+            <div class="forms-container">
+              <div class="signin-signup">
+
+                <form action="#" class="sign-in-form">
+                  <h2 class="title">შესვლა</h2>
+                  <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="ელ.ფოსტა" />
+                  </div>
+                  <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="პაროლი" />
+                  </div>
+                  <input type="submit" value="შესვლა" class="btnss solid" />
+                </form>
+
+                <form action="#" class="sign-up-form">
+                  <h2 class="title">რეგისტრაცია</h2>
+                  <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="სახელი გვარი" />
+                  </div>
+                  <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="ელფოსტა" />
+                  </div>
+                  <div class="input-field">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" placeholder="ტელეფონი" />
+                  </div>
+                  <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="პაროლი" />
+                  </div>
+                  <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="გაიმეორეთ პაროლი" />
+                  </div>
+                  <span class="eee">სანამ გაივლი ავტორიზაციას ნახე</span><a type="button" class="" data-mdb-toggle="modal" data-mdb-target="#privasy_polity">
+                    წესები და პირობები
+                  </a>
+                  <input type="submit" class="btnss" value="რეგისტრაცია" />
+                  <a href=""></a>
+                </form>
+              </div>
+            </div>
+      
+            <div class="panels-container">
+              <div class="panel left-panel">
+                <div class="content">
+                  <h3>ჯერ არ ხართ დარეგისტრირებული?</h3>
+                  <p>
+                    გაიარეთ ბისნაზე ავტორიზაცია, ეს ძალიან სწრაფი და მარტივია!
+                  </p>
+                  <button class="btnse transparent" id="sign-up-btn">
+                    რეგისტრაცია
+                  </button>
+                </div>
+                <img src="" class="image" alt="" />
+              </div>
+              <div class="panel right-panel">
+                <div class="content">
+                  <h3>უკვე გაქვს ანგარიში?</h3>
+                  <p>
+                   თუ შენ უკვე გაქვს ანგარიში შეგიძლია შეიყვანოთ თქვენი ელფოსტა, პაროლი და შეხვიდეთ თქვენს გვერდზე.
+                  </p>
+                  <button class="btnse transparent" id="sign-in-btn">
+                    შესვლა
+                  </button>
+                </div>
+                <img src="" class="image" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+        <div class="modal fade" id="privasy_polity" tabindex="-1" aria-labelledby="privasy_polity" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="privasy_polity">წესები და პირობები</h5>
+                     <button type="button" class="clos" data-mdb-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                     </div>
-                    <div class="sign-up-htm">
-                        <div class="group">
-                            <label for="user" class="label">სახელი და გვარი</label>
-                            <input id="user" type="text" class="input">
+                <div class="modal-body">
+
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima dolorem sed quos adipisci quasi ad perspiciatis molestias eveniet, quas voluptatum quod, doloremque incidunt blanditiis iure praesentium tempore modi odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repellat corporis iure autem, accusantium dolorem recusandae modi animi non quas, obcaecati deserunt, reiciendis nemo sint perferendis quasi id! Saepe, accusantium!</P>
+
+                    <form class="row g-2 needs-validation" novalidate>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input er" type="checkbox" value="" id="invalidCheck" required />
+                            <label class="form-check-label" for="invalidCheck">მე ვეთანხმები წესებს და პირობებს</label>
+                            <div class="invalid-feedback">გაგზავნამდე უნდა დაეთანხმოთ.</div>
+                          </div>
                         </div>
-                        <div class="group">
-                            <label for="pass" class="label">პაროლი</label>
-                            <input id="pass" type="password" class="input" data-type="password">
+                        <div class="col-12">
+                          <button class="btnss" type="submit">გაგრძელება</button>
                         </div>
-                        <div class="group">
-                            <label for="pass" class="label">გაიმეორე პაროლი</label>
-                            <input id="pass" type="password" class="input" data-type="password">
-                        </div>
-                        <div class="group">
-                            <label for="pass" class="label">ელფოსტის მისამართი</label>
-                            <input id="pass" type="text" class="input">
-                        </div>
-                        <div class="group">
-                            <label for="tel" class="label">ტელეფონის ნომერი</label>
-                            <input id="tel" type="number" min="1" max="15" class="input">
-                        </div>
-                        <div class="group">
-                            <input type="submit" class="button ss" value="რეგისტრაცია">
-                        </div>
-                        <div class="foot-lnk">
-                            <label for="tab-1" class="e"><i class="fa-solid fa-rotate-left"></i> უკან</a>
-                        </div>
-                    </div>
+                      </form>
+                </div>
                 </div>
             </div>
         </div>
+      
 
         <!-- CDN JS FILES -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js" integrity="sha512-k2o1KZdvUi59PUXirfThShW9Gdwtk+jVYum6t7RmyCNAVyF9ozijFpvLEWmpgqkHuqSWpflsLf5+PEW6Lxy/wA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 
-        <!-- MDB -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+         <!-- MDB -->
+         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
 
         <!-- Template Main JS File -->
-        <script src="Assets/Script/dark_mode.js"></script>
+        <script src="Assets/Script/register.js"></script>
 
 
     </body>

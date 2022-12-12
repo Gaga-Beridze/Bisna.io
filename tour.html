@@ -33,8 +33,8 @@
             <nav id="navbar" class="navbar shadow-0 order-last order-lg-0">
                <ul>
                   <li><a class="nav-link scrollto " href="index.html">მთავარი</a></li>
-                  <li><a class="nav-link scrollto" href="#">ტურები</a></li>
-                  <li><a class="nav-link scrollto" href="#">ადგილები</a></li>
+                  <li><a class="nav-link scrollto" href="tour.html">ტურები</a></li>
+                  <li><a class="nav-link scrollto" href="place.html">ადგილები</a></li>
                   <li class="dropdown">
                      <a href="#"><span>ტურისტული პროდუქტები</span> <i class="bi bi-chevron-down"></i></a>
                      <ul>
@@ -148,6 +148,10 @@
                <button type="button" class="f-size-10" data-mdb-toggle="modal" data-mdb-target="#map">
                   <i class="fas fa-map-marked-alt"></i> ტურების რუკა
                </button>
+
+               <button style="margin: 0 .3rem;" type="button" class="f-size-10" data-mdb-toggle="modal" data-mdb-target="#sirtuleebi">
+                  <i class="fas fa-info"></i> დახმარება
+               </button>
             </div>
 
             <!-- tour map modal -->
@@ -166,51 +170,102 @@
                </div>
             </div>
 
+              
+            <!-- sirtuleebi modal -->
+            <div class="modal" id="sirtuleebi" tabindex="-1" aria-labelledby="sirtuleebi" aria-hidden="true">
+               <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <button type="button" class="clos" data-mdb-dismiss="modal" aria-label="Close">
+                           <i class="fa-solid fa-xmark"></i>
+                        </button>
+                     </div>
+                  <div class="modal-body ere">
+                     <p>
+                     <span class="it">A</span> - მარტივი ექსკურსია
+                     მოიცავს მარტივ სანახაობრივ მოგზაურობას. არ შეიცავს, ან უმნიშვნელო ოდენობით შეიცავს საფეხმავლო ელემენტებს.
+                     <br>
+                     </p>
+                     <p>
+                     <span class="it">B-1</span> - მარტივი საფეხმავლო
+                     გულისხმობს ნაკლებად მძიმე ფიზიკურ დატვირთვას. შეიცავს ნაკლებად რთულ რელიეფზე / გარემო პირობებში გადაადგილებას.
+                     <br>
+                     </p>
+                     <p>
+                     <span class="it">B-2</span> - რთული საფეხმავლო
+                     გულისხმობს მძიმე ფიზიკურ დატვირთვას. შეიცავს რთულ რელიეფზე / გარემო პირობებში გადაადგილებას.
+                     <br>
+                     </p>
+                     <p>
+                     <span class="it">EX</span> - ექსტრემალური საფეხმავლო
+                     გულისხმობს მძიმე ფიზიკურ დატვირთვას. შეიცავს განსაკუთრებით რთულ რელიეფზე / გარემო პირობებში გადაადგილებას. მონაწილისგან მოითხოვს კარგ ფიზიკურ ფორმაში ყოფნას და რთულ საფეხმავლო ლაშქრობებში მონაწილეობის გამოცდილებას. მონაწილე ფიზიკურად და ფსიქოლოგიურად მზად უნდა იყოს მოსალოდნელი დაბრკოლებებისადმი. შესაძლოა შეიცავდეს გარკვეულ საფრთხეებს, რაზეც მონაწილე წინასწარ იქნება გაფრთხილებული.
+                     </p>
+                  </div>
+                  </div>
+               </div>
+            </div>
+
             <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-9">
                      <div class="row">
 
+                         <!--======= Card Start =======-->
+                         <div class="col-lg-4">
+                           <div class="box">
+                               <div class="num">№ 015</div>
+                               <div class="photo">
+                                   <img src="https://bisna.ge/img/tours/kaxeTi.alaznisveli-5f9857accb38e.jpg">
+                               </div>
+                              <div class="dscrb">
+                                 <p class="text"><a href="#">კახეთი. ალაზნის ველი</a></p>
+                                 <div class="sub-dscrb d-flex justify-content-between align-items-center">
+                                    <div class="address"><i class="fa-solid fa-location-dot"></i> კახეთი,</div>
+                                    <div><i class="fa-solid fa-person-running"></i> სირთულე: <span>A</span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
                         <!--======= Card Start =======-->
-                        <div class="col-lg-3">
+                        <div class="col-lg-4">
                            <div class="box">
                                <div class="num">№ 015</div>
                                <div class="photo">
                                    <img src="https://bisna.ge/img/tours/kaxeTi.alaznisveli-5f9857accb38e.jpg">
                                </div>
                               <div class="dscrb">
-                                 <p class="text">კახეთი. ალაზნის ველი</p>
+                                 <p class="text"><a href="#">კახეთი. ალაზნის ველი</a></p>
                                  <div class="sub-dscrb d-flex justify-content-between align-items-center">
-                                    <div class="address">კახეთი,</div>
-                                    <div>სირთულე: <span class="dif-category">A</span></div>
+                                    <div class="address"><i class="fa-solid fa-location-dot"></i> კახეთი,</div>
+                                    <div><i class="fa-solid fa-person-running"></i> სირთულე: <span>A</span></div>
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <!--======= Card End =======-->
 
-                         <!--======= Card Start =======-->
-                         <div class="col-lg-3">
+
+                        <!--======= Card Start =======-->
+                        <div class="col-lg-4">
                            <div class="box">
                                <div class="num">№ 015</div>
                                <div class="photo">
                                    <img src="https://bisna.ge/img/tours/kaxeTi.alaznisveli-5f9857accb38e.jpg">
                                </div>
                               <div class="dscrb">
-                                 <p class="text">კახეთი. ალაზნის ველი</p>
+                                 <p class="text"><a href="#">კახეთი. ალაზნის ველი</a></p>
                                  <div class="sub-dscrb d-flex justify-content-between align-items-center">
-                                    <div class="address">კახეთი,</div>
-                                    <div>სირთულე: <span class="dif-category">A</span></div>
+                                    <div class="address"><i class="fa-solid fa-location-dot"></i> კახეთი,</div>
+                                    <div><i class="fa-solid fa-person-running"></i> სირთულე: <span>A</span></div>
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <!--======= Card End =======-->
+                        
 
-                         <!--======= Card Start =======-->
-                         <div class="col-lg-3">
-                          
-                        </div>
-                        <!--======= Card End =======-->
+                     </div>
+                  </div>
+                        
 
                         <!--======= Filter Start =======-->
                         <div class="col-md-3">
@@ -230,26 +285,226 @@
 
                                           <div class="difficulty-lvl">
                                              <label class="title">სირთულის დონის მიხედვით</label>
-                                             <div class="checkboxes">
+                                             <div class="checkboxese">
+
                                                 <div class="wrapper">
                                                    <input id="A" class="checkbox" type="checkbox" name="difficulty[]" value="2">
                                                    <label for="A" class="dif-category lg">A</label>
-                                                </div>                                                             
+                                                </div>    
+                                                
+                                                <div class="wrapper">
+                                                   <input id="B_1" class="checkbox" type="checkbox" name="difficulty[]" value="3">
+                                                   <label for="B_1" class="dif-category lg">B-1</label>
+                                                </div>   
+
+                                                <div class="wrapper">
+                                                   <input id="B_2" class="checkbox" type="checkbox" name="difficulty[]" value="4">
+                                                   <label for="B_2" class="dif-category lg">B-2</label>
+                                                </div>   
+
+                                                <div class="wrapper">
+                                                   <input id="EX" class="checkbox" type="checkbox" name="difficulty[]" value="5">
+                                                   <label for="EX" class="dif-category lg">EX</label>
+                                                </div>   
+
                                              </div>
                                           </div>
 
                                           <div class="provinces">
                                              <label class="title">ისტორიული მხარეების მიხედვით</label>
                                              <p class="min-title">დასავლეთ საქართველო</p>
+
                                                 <div class="checkboxes _ex">
                                                    <div class="wrapper">
-                                                   <input id="1" class="checkbox" type="checkbox" name="region[]" value="1">
-                                                   <label for="1" class="dif-category"><span>სვანეთი</span></label>
-                                                </div>
-                                             </div>        
+                                                      <input id="1" class="checkbox" type="checkbox" name="region[]" value="1">
+                                                      <label for="1" class="dif-category"><span>სვანეთი</span></label>
+                                                   </div>
+                                                </div> 
+                                                
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="2" class="checkbox" type="checkbox" name="region[]" value="2">
+                                                      <label for="2" class="dif-category"><span>ლეჩხუმი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="3" class="checkbox" type="checkbox" name="region[]" value="3">
+                                                      <label for="3" class="dif-category"><span>რაჭა</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="4" class="checkbox" type="checkbox" name="region[]" value="4">
+                                                      <label for="4" class="dif-category"><span>იმერეთი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="5" class="checkbox" type="checkbox" name="region[]" value="5">
+                                                      <label for="5" class="dif-category"><span>სამეგრელო</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="6" class="checkbox" type="checkbox" name="region[]" value="6">
+                                                      <label for="6" class="dif-category"><span>გურია</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="7" class="checkbox" type="checkbox" name="region[]" value="7">
+                                                      <label for="7" class="dif-category"><span>აჭარა</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="8" class="checkbox" type="checkbox" name="region[]" value="8">
+                                                      <label for="8" class="dif-category"><span>აფხაზეთი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <p class="min-title">აღმოსავლეთ საქართველო</p>
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="9" class="checkbox" type="checkbox" name="region[]" value="9">
+                                                      <label for="9" class="dif-category"><span>თუშეთი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="10" class="checkbox" type="checkbox" name="region[]" value="10">
+                                                      <label for="10" class="dif-category"><span>ხევსურეთი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="11" class="checkbox" type="checkbox" name="region[]" value="11">
+                                                      <label for="11" class="dif-category"><span>ფშავი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="12" class="checkbox" type="checkbox" name="region[]" value="12">
+                                                      <label for="12" class="dif-category"><span>ხევი (ყაზბეგის მუნიციპალიტეტი)</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="13" class="checkbox" type="checkbox" name="region[]" value="13">
+                                                      <label for="13" class="dif-category"><span>მთიულეთი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="14" class="checkbox" type="checkbox" name="region[]" value="14">
+                                                      <label for="14" class="dif-category"><span>ერწო-თიანეთი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="15" class="checkbox" type="checkbox" name="region[]" value="15">
+                                                      <label for="15" class="dif-category"><span>კახეთი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="16" class="checkbox" type="checkbox" name="region[]" value="16">
+                                                      <label for="16" class="dif-category"><span>კახეთი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="17" class="checkbox" type="checkbox" name="region[]" value="17">
+                                                      <label for="17" class="dif-category"><span>ქვემო ქართლი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="18" class="checkbox" type="checkbox" name="region[]" value="18">
+                                                      <label for="18" class="dif-category"><span>შიდა ქართლი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="19" class="checkbox" type="checkbox" name="region[]" value="19">
+                                                      <label for="19" class="dif-category"><span>თორი (ბორჯომის მუნიციპალიტეტი)</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="20" class="checkbox" type="checkbox" name="region[]" value="20">
+                                                      <label for="20" class="dif-category"><span>თრიალეთი (წალკის მუნიციპალიტეტი)</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="21" class="checkbox" type="checkbox" name="region[]" value="21">
+                                                      <label for="21" class="dif-category"><span>სამცხე</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="22" class="checkbox" type="checkbox" name="region[]" value="22">
+                                                      <label for="22" class="dif-category"><span>ჯავახეთი</span></label>
+                                                   </div>
+                                                </div> 
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="23" class="checkbox" type="checkbox" name="region[]" value="23">
+                                                      <label for="23" class="dif-category"><span>თბილისი</span></label>
+                                                   </div>
+                                                </div> 
                                           </div>
 
-                                          <div class="text-right">
+                                          <div class="provinces">
+                                             <label class="title">დამატებითი კრიტერიუმები</label>
+
+                                                <div class="checkboxes _ex">
+                                                   <div class="wrapper">
+                                                      <input id="jeep_tour" class="checkbox" type="checkbox" name="region[]" value="40">
+                                                      <label for="jeep_tour" class="dif-category"><span>ჯიპ-ტური</span></label>
+                                                   </div>
+
+                                                   <div class="wrapper">
+                                                      <input id="bike_tour" class="checkbox" type="checkbox" name="region[]" value="41">
+                                                      <label for="bike_tour" class="dif-category"><span>ველო-ტური</span></label>
+                                                   </div>
+
+                                                   <div class="wrapper">
+                                                      <input id="horse_tour" class="checkbox" type="checkbox" name="region[]" value="42">
+                                                      <label for="horse_tour" class="dif-category"><span>ცხენ-ტური</span></label>
+                                                   </div>
+
+                                                   <div class="wrapper">
+                                                      <input id="child_tour" class="checkbox" type="checkbox" name="region[]" value="43">
+                                                      <label for="child_tour" class="dif-category"><span>ბავშვებზე ადაპტირებული</span></label>
+                                                   </div>
+                                                </div> 
+                                          </div>
+
+                                          <div class="text-right Marta">
                                              <button class="filterBtn">ძებნა &amp; ფილტრი</button>
                                           </div>
                                        </div>

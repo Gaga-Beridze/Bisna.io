@@ -2,6 +2,7 @@
 @import url("//cdn.web-fonts.ge/fonts/alk-rounded-mtav-med/css/alk-rounded-mtav-med.min.css");
 @import url("//cdn.web-fonts.ge/fonts/bpg-algeti/css/bpg-algeti.min.css");
 @import url("//cdn.web-fonts.ge/fonts/bpg-glaho/css/bpg-glaho.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-irubaqidze/css/bpg-irubaqidze.min.css");
 
 
 :root {
@@ -124,6 +125,9 @@ body.dark {
     color: var(--text-color-1);
 }
 
+.m-w{
+    margin-top: -15px;
+}
 
 /*--------------------------------------------------------------
 # Preloader
@@ -2764,6 +2768,22 @@ section {
 	background-color: var(--bg-color-1);
 }
 
+.img-thumbnail
+{
+    padding: .25rem;
+    background-color: var(--bg-color-1);
+    border: none !important;
+    border-radius: 20px;
+    box-shadow: none !important;
+}
+
+.text-tour{
+    padding: 15px;
+    background-color: var(--bg-color-1);
+    border-radius: 20px;
+    color: var(--text-color-1);
+}
+
 .tours-section .box .sub-dscrb .address{
 	padding:2px 2px 1px 15px;
 	background-size: 14px;
@@ -3024,6 +3044,16 @@ margin-left: -25px;
     background-color: var(--bg-color-1);
     color: var(--text-color-1);
 }
+
+.t-green{
+    border-radius: 60px;
+    background-color: var(--bg-color-1);
+    padding: 5px;
+    text-align: center;
+    font-family: "BPG Irubaqidze", sans-serif;
+    color: var(--text-color-1);
+}
+
 
 .search_2{
 	padding: 10px 15px;
@@ -3430,3 +3460,79 @@ margin-left: -25px;
     background: var(--hover);
 }
  
+
+/* 
+* tours details
+*/
+
+.inner-img img{
+	cursor:pointer;
+	max-width:550px;
+	margin:10px;
+}
+.tour-article .title{
+	margin-bottom: 20px;
+}
+.tours-section .tour-box{
+	position: relative;
+	padding-left: 28px;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+.tours-section ul{
+	padding-left: 15px;
+}
+.tours-section ul li{
+	position: relative;
+}
+.tours-section ul.dotted li{
+	padding-left: 15px;
+}
+.tours-section ul.icon-ul li{
+	padding-left: 28px;
+}
+.tours-section ul.dotted li::before{
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border:2px solid var(--Main-color);
+	border-radius: 50%;
+	left: 0;
+	top: 10px;
+}
+.tours-section .ico{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+.tours-section .ico img{
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: contain;
+}
+.tour-details{
+	padding: 30px 15px;
+	background-color: var(--bg-color-1);
+    color: var(--text-color-1);
+	border-radius: 16px;
+	box-shadow: 3px 4px 20px -5px rgba(0,0,0,0.3);
+	margin-bottom: 40px;
+    float: left;
+}
+.tours-section.wtite-bg{
+	padding-top: 0;
+}
+
+.raeq{
+    margin-top: -12px;
+}
+

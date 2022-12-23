@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>ბისნა - ტურები საქართველოში</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="Assets/Image/Logo/Light-logo.png" rel="icon">
+    <link href="Assets/Image/Logo/Light-logo.png" rel="apple-touch-icon">
+
+    <!-- CDN CSS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css"
+        integrity="sha512-pJrGHWDVOeiy4UkMtHu0fpD8oLLssFcaW0fsVXUkA1/jDLopa554Z1AZo5SKtekHnnmyat0ipiP0snKDrt0GNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet" />
+
+
+    <!-- Template Main CSS File -->
+    <link href="Assets/Styles/style.css" rel="stylesheet">
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <a href="index.html" class="logo me-auto"><img id="Logo" src="Assets/Image/Logo/Light-logo.png"
+                    alt="bisna"></a>
+
+            <nav id="navbar" class="navbar shadow-0 order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto " href="index.html">მთავარი</a></li>
+                    <li><a class="nav-link scrollto" href="tour.html">ტურები</a></li>
+                    <li><a class="nav-link scrollto" href="place.html">ადგილები</a></li>
+                    <li class="dropdown"><a href="#"><span>ტურისტული პროდუქტები</span> <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-bed"></i>&nbsp; დაბინავება</a></li>
+                            <li><a href="#"><i class="fa-solid fa-utensils"></i>&nbsp; კვება</a></li>
+                            <li><a href="#"><i class="fa-solid fa-face-smile"></i>&nbsp; გართობა</a></li>
+                            <li><a href="#"><i class="fa-solid fa-person-skiing"></i>&nbsp; ექსტრემი & რეკრეაცია</a>
+                            </li>
+                            <li><a href="#"><i class="fa-solid fa-person"></i>&nbsp; გიდები</a></li>
+                            <li><a href="#"><i class="fa-solid fa-truck"></i>&nbsp; ტრანსპორტირება</a></li>
+                            <li><a href="#"><i class="fa-solid fa-id-card-clip"></i>&nbsp; ავტოგაქირავება</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#"><span>გალერეა</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-photo-film"></i>&nbsp; ფოტო გალერეა</a></li>
+                            <li><a href="#"><i class="fa-solid fa-photo-film"></i>&nbsp; ვიდეო გალერეა</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#">ჩვენ შესახებ</a></li>
+                    <li><a class="nav-link scrollto" href="#">დაჯავშნე ტური</a></li>
+                    <li><a class="nav-link scrollto" href="quiz.html">ქვიზები</a></li>
+                    <li><a class="nav-link scrollto" href="#">კონტაქტი</a></li>
+                    <div class="lang">
+                        <li>
+                            <a class="nav-link scrollto c" href="#"><img src="Assets/Image/Lang/GEO.png" alt="GEO"
+                                    srcset=""></a>
+                        </li>
+                        <li>
+                            <a class="nav-link scrollto" href="#"><img src="Assets/Image/Lang/ENG.png" alt="ENG"
+                                    srcset=""></a>
+                        </li>
+                    </div>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+            <button class="offcanva-btn" type="button" data-mdb-toggle="offcanvas" data-mdb-target="#offcanvasRight"
+                aria-controls="offcanvasRight">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+
+            <button class="offcanva-btn s" id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>w
+
+            <a class="offcanva-btn s" href="register.html" id="login_btn">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+        </div>
+
+        <div id="search">
+            <input type="search" name="" id="" placeholder="ძიება...">
+        </div>
+
+    </header>
+    <!-- End Header -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><i class="fa-solid fa-gear"></i> პარამეტრები</h5>
+            <button type="button" class="clos" data-mdb-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                <div class="setings">
+                    <div class="mode noede">
+                        <h6>აირჩიეთ თქვენი რეჟიმი </h6>
+                        <div id="dark-body">
+                            <div id="dark-button"></div>
+                        </div>
+                        <div class="figure"></div>
+                    </div>
+
+                    <div class="mode">
+                        <h6 class="settings-title">სანავიგაციო მენიუს რეჟიმი</h6>
+                        <div id="nav-body">
+                            <div id="nav-button"></div>
+                        </div>
+                        <div class="figure"></div>
+                    </div>
+                </div>
+
+
+                <div class="setings r-2">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled"
+                            disabled>
+                        <label class="form-check-label" for="flexSwitchCheckDisabled">ფონტის გამუქება</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled"
+                            disabled>
+                        <label class="form-check-label" for="flexSwitchCheckDisabled">მთავარი ფერის შეცვლა</label>
+                    </div>
+                </div>
+
+                <div class="setings r-2">
+                    <label for="range-font" class="form-label">ფონტის ზომა</label>
+                    <div class="range">
+                        <input type="range" class="form-range" min="1" max="8" step="1" id="range-font" disabled />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tours-section _inner">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="tour-details">
+                        <div class="tour-box f-dlex align-items-center">
+                            <div class="ico">
+                                <i class="fas fa-hashtag"></i>
+                            </div>
+                            <div class="detail"><b>№</b><br>  015</div>
+                        </div>
+                        <div class="tour-box f-dlex align-items-center">
+                            <div class="ico">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="detail">
+                                <b>მდებარეობა: </b><br> კახეთი, საქართველო
+                            </div>
+                        </div>
+                        <div class="tour-box f-dlex align-items-center">
+                            <div class="ico">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <div class="detail">
+                                <b>სირთულის კატეგორია: </b><br>
+                                <span class="dif-category">
+                                    A
+                                </span> 
+                            </div>
+                        </div>
+                        <div class="tour-box f-dlex align-items-center">
+                            <div class="ico">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="detail">
+                                <b>ხანგრძლივობა: </b><br>
+                                <ul class="dotted">
+                                    <li>სულ: 1 დღე </li>
+                                    <li>საფეხმავლო: უმნიშვნელო </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tour-box f-dlex align-items-center">
+                            <div class="ico">
+                                <i class="fas fa-sort-amount-up"></i>
+                            </div>
+                            <div class="detail">
+                                
+                                <span class="extrim">
+                                    <b>უკიდურესი სიმაღლებრივი ცვალებადობა: </b><br>
+                                    <div class="tip" data-tip="<div>განსხვავება საფეხმავლო მარშრუტის ყველაზე დაბალ და ყველაზე მაღალ წერტილებს შორის.">?</div>
+                                </span> 
+                                უმნიშვნელო
+                            </div>
+                        </div>
+                        <div class="tour-box f-dlex align-items-center">
+                            <div class="ico">
+                                <i class="fas fa-hiking"></i>
+                            </div>
+                            <div class="detail">
+                                <b>ჯამურად ფეხით გასავლელი მანძილი: </b><br>
+                                 უმნიშვნელო
+                            </div>
+                        </div>
+                        <div class="tour-box f-dlex align-items-center">
+                            <div class="ico">
+                                <i class="fas fa-arrows-alt"></i>
+                            </div>
+                            <div class="detail">
+                                <b>საფეხმავლო მარშრუტის ტრაექტორია: </b><br>
+                                <ul class="icon-ul">
+                                                                        <li>
+                                        <div class="ico">
+                                            <i class="fas fa-arrows-alt-v"></i>
+                                        </div>
+                                        <span class="text-danger">წასვლა - დაბრუნება X</span>
+                                    </li>
+                                    
+                                                                         <li>
+                                        <div class="ico">
+                                            <i class="fas fa-long-arrow-alt-up"></i>
+                                        </div>
+                                        <span class="text-danger">ერთი გზა X</span>
+                                    </li>
+                                    
+
+                                                                         <li>
+                                        <div class="ico">
+                                            <i class="fas fa-redo-alt"></i>
+                                        </div>
+                                        <span class="text-danger">წრიული X</span>
+                                    </li>
+                                                                        
+                                </ul>
+                            </div>
+                        </div>
+                                                <div class="tour-box f-dlex align-items-center">
+                            <div class="ico">
+                                <i class="fas fa-exclamation"></i>
+                            </div>
+                            <div class="detail">
+                                <b>გასათვალისწინებელი გარემოებები: </b><br>
+                                <p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal;"><span style="font-weight: 700;">● ჩვენი პირობები იხილეთ <a href="http://bisna.ge/docs/15634329975d3018258881d.pdf" target="_blank">აქ</a>.</span></p>
+                            </div>
+                        </div>
+						  		<div class="tour-box f-dlex align-items-center">
+								<div class="ico">
+									<i class="fas fa-video"></i>
+								</div>
+								<div class="detail">
+									<b>სხვადასხვა სამოყვარულო ვიდეოები: </b><br>
+									<a href="https://www.youtube.com/watch?v=UWiEexu8XHc" target="_blank">● ალავერდის საკათედრო ტაძარი</a>
+								</div>
+							</div>
+						</div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    
+                    <div class="col-md-9"></div>
+                
+                    <div class="tour-article">
+                        <h2 class="title t-green">კახეთი. ალაზნის ველი</h2>
+                        <div class="text-tour">   							  
+                              <div style="line-height: 1.4;"><span style="font-size: 18px;">იმოგზაურეთ ღვინის მხარეში ბისნასთან ერთად და მოინახულეთ საქართველოს ამ ულამაზესი მხარის მთავარი ღირსშესანიშნაობები.</span></div><div style="line-height: 1.4;"><span style="font-weight: bold; font-size: 18px;"><br>ტურის განრიგი:<br></span><span style="font-size: 18px;">1. უჯარმის ციხე</span></div><div style="line-height: 1.4;"><span style="font-size: 18px;">2. ახალი და ძველი შუამთის მონასტრები<br>3. ქალაქი თელავი<br>4. წინანდლის პარკი<br>5. ალავერდის საკათედრო ტაძარი<br>6. ლოპოტას ტბა<br>7. გრემი<br>8. ნეკრესის მონასტერი<br>9. ყვარლის ტბა<br><br>გარდა აღნიშნული ტურისა, ბისნა გთავაზობთ <a href="http://bisna.ge/ka/tour/569" target="_blank">კახეთის სტანდარტულ ტურს ბოდბე&nbsp;— სიღნაღი&nbsp;— ხორნაბუჯის მიმართულებით</a>.<br><br></span></div><hr><div style="line-height: 1.4;"><span style="font-weight: bold; font-size: 18px;"><br></span></div><div style="line-height: 1.4;"><span style="font-size: 18px;"><span style="font-weight: bold;">1. უჯარმის ციხე</span><br>III-IV საუკუნეების სიმაგრე მდინარე ივრის მარჯვენა ნაპირზე<br><br></span></div><div style="line-height: 1.4;"><span style="font-size: 18px; font-weight: bold;">2. ახალი და ძველი შუამთის მონასტრები</span><br><span style="font-size: 18px;">ახალი და ძველი შუამთის მონასტრები (პირველი მათგანი </span><span style="font-size: 18px;">—</span><span style="font-size: 18px;">&nbsp;დედათა მონასტერი) შუა საუკუნეების მონასტრები ქალაქ თელავის მახლობლად, ტყეში<br></span><br></div><div style="line-height: 1.4;"><span style="font-size: 18px;"><span style="font-weight: bold;">3. ქალაქი თელავი</span><br>ძველი ისტორიული ქალაქი, კახეთის მხარისა და ტელავის მუნიციპალიტეტის ადმინისტრციული ცენტრი<br></span><span style="font-weight: bold; font-size: 18px;"><br>4. წინანდლის პარკი</span><br></div><div style="line-height: 1.4;"><span style="font-size: 18px;">წინანდლის პარკი, იგივე ალექსანდრე ჭავჭავაძის კომპლექსი&nbsp;</span><span style="font-size: 18px;">—</span><span style="font-size: 18px;">&nbsp;ისტორიულ-არქიტექტურული კომპლექსი, შედგება სასახლის, პარკის, მარნის, ეკლესიის ნაშთის და სხვა ობიექტებისაგან.<br></span><br><div class="tour-photo "><div class=" inner-img"><img src="http://bisna.ge/docs/16041281055f9d0d6997a0e.jpg" style="width: 50%; float: right;" class="img-thumbnail pull-right"></div></div><br><span style="font-weight: bold; font-size: 18px;">5. ალავერდის საკათედრო ტაძარი</span><br></div><div style="line-height: 1.4;"><span style="font-size: 18px;">საქართველოს ერთ-ერთი უდიდესი და გამორჩეული ტაძარი. მდებარეობს ალაზნის ველზე.<br></span><br></div><div style="line-height: 1.4;"><span style="font-size: 18px;"><span style="font-weight: bold;">6. ლოპოტას ტბა</span><br>მცირე ზომის ტბა საკურორტო ინფრასტრუქტურით<br><br></span></div><div style="line-height: 1.4;"><span style="font-size: 18px;"><span style="font-weight: bold;">7. გრემის ტაძრის კომპლექსი</span><br>XVI საუკუნის კომპლექსი. ქართული არქიტექტურის ერთ-ერთი უმნიშვნელოვანესი ნიმუში. შედგება მთავარანგელოზის ტაძრის, სამეფო კოშკის, გალავნისა და სხვა ობიექტებისაგან.<br><br></span></div><div style="line-height: 1.4;"><span style="font-size: 18px; font-weight: bold;">8. ნეკრესის მონასტერი</span><br><span style="font-size: 18px;">მონასტერი მთის ფერდობზე მდებარეობს და ალაზნის ველს გადაჰყურებს. მონასტრის ერთ-ერთი ეკლესია —&nbsp;IV საუკუნის ბაზილიკა, საქართველოში მდებარე ქრისტიანული ტაძრებიდან ერთ-ერთი უძველესია.</span><br><br></div><div style="line-height: 1.4;"><span style="font-size: 18px;"><span style="font-weight: bold;">9. ყვარლის ტბა</span><br>კიდევ ერთი მცირე ზომის ტბა, მდებარეობს ქალაქ ყვარლის მახლობლად.<br><br><br></span></div>
+                        </div>
+						
+                        <div class="text-tour mt-3">
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1sBFnHLDinvWNajmT_Qe8irI9dVyHYgjQ" width="100%" height="380" style="margin: auto;"></iframe>
+                        </div>
+                        
+						
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-12">
+                           <div id="filter">
+                              <form class="tour_form m-w" method="GET" action="https://bisna.ge/tours-search" accept-charset="UTF-8">
+                                      
+                                    <div class="search-1">
+                                       <i class="fa fa-search"></i>
+                                       <input type="text" class="form-control form-input" placeholder="ძიება...">
+                                       <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                                    </div>
+                               
+                                 <div class="search_2">
+                                    <h2 class="title">ძებნა &amp; ფილტრი</h2>
+
+                                    <div class="difficulty-lvl">
+                                       <label class="title">სირთულის დონის მიხედვით</label>
+                                       <div class="checkboxese">
+
+                                          <div class="wrapper">
+                                             <input id="A" class="checkbox" type="checkbox" name="difficulty[]" value="2">
+                                             <label for="A" class="dif-category lg">A</label>
+                                          </div>    
+                                          
+                                          <div class="wrapper">
+                                             <input id="B_1" class="checkbox" type="checkbox" name="difficulty[]" value="3">
+                                             <label for="B_1" class="dif-category lg">B-1</label>
+                                          </div>   
+
+                                          <div class="wrapper">
+                                             <input id="B_2" class="checkbox" type="checkbox" name="difficulty[]" value="4">
+                                             <label for="B_2" class="dif-category lg">B-2</label>
+                                          </div>   
+
+                                          <div class="wrapper">
+                                             <input id="EX" class="checkbox" type="checkbox" name="difficulty[]" value="5">
+                                             <label for="EX" class="dif-category lg">EX</label>
+                                          </div>   
+
+                                       </div>
+                                    </div>
+
+                                    <div class="provinces">
+                                       <label class="title">ისტორიული მხარეების მიხედვით</label>
+                                       <p class="min-title">დასავლეთ საქართველო</p>
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="1" class="checkbox" type="checkbox" name="region[]" value="1">
+                                                <label for="1" class="dif-category"><span>სვანეთი</span></label>
+                                             </div>
+                                          </div> 
+                                          
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="2" class="checkbox" type="checkbox" name="region[]" value="2">
+                                                <label for="2" class="dif-category"><span>ლეჩხუმი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="3" class="checkbox" type="checkbox" name="region[]" value="3">
+                                                <label for="3" class="dif-category"><span>რაჭა</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="4" class="checkbox" type="checkbox" name="region[]" value="4">
+                                                <label for="4" class="dif-category"><span>იმერეთი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="5" class="checkbox" type="checkbox" name="region[]" value="5">
+                                                <label for="5" class="dif-category"><span>სამეგრელო</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="6" class="checkbox" type="checkbox" name="region[]" value="6">
+                                                <label for="6" class="dif-category"><span>გურია</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="7" class="checkbox" type="checkbox" name="region[]" value="7">
+                                                <label for="7" class="dif-category"><span>აჭარა</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="8" class="checkbox" type="checkbox" name="region[]" value="8">
+                                                <label for="8" class="dif-category"><span>აფხაზეთი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <p class="min-title">აღმოსავლეთ საქართველო</p>
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="9" class="checkbox" type="checkbox" name="region[]" value="9">
+                                                <label for="9" class="dif-category"><span>თუშეთი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="10" class="checkbox" type="checkbox" name="region[]" value="10">
+                                                <label for="10" class="dif-category"><span>ხევსურეთი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="11" class="checkbox" type="checkbox" name="region[]" value="11">
+                                                <label for="11" class="dif-category"><span>ფშავი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="12" class="checkbox" type="checkbox" name="region[]" value="12">
+                                                <label for="12" class="dif-category"><span>ხევი (ყაზბეგის მუნიციპალიტეტი)</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="13" class="checkbox" type="checkbox" name="region[]" value="13">
+                                                <label for="13" class="dif-category"><span>მთიულეთი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="14" class="checkbox" type="checkbox" name="region[]" value="14">
+                                                <label for="14" class="dif-category"><span>ერწო-თიანეთი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="15" class="checkbox" type="checkbox" name="region[]" value="15">
+                                                <label for="15" class="dif-category"><span>კახეთი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="16" class="checkbox" type="checkbox" name="region[]" value="16">
+                                                <label for="16" class="dif-category"><span>კახეთი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="17" class="checkbox" type="checkbox" name="region[]" value="17">
+                                                <label for="17" class="dif-category"><span>ქვემო ქართლი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="18" class="checkbox" type="checkbox" name="region[]" value="18">
+                                                <label for="18" class="dif-category"><span>შიდა ქართლი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="19" class="checkbox" type="checkbox" name="region[]" value="19">
+                                                <label for="19" class="dif-category"><span>თორი (ბორჯომის მუნიციპალიტეტი)</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="20" class="checkbox" type="checkbox" name="region[]" value="20">
+                                                <label for="20" class="dif-category"><span>თრიალეთი (წალკის მუნიციპალიტეტი)</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="21" class="checkbox" type="checkbox" name="region[]" value="21">
+                                                <label for="21" class="dif-category"><span>სამცხე</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="22" class="checkbox" type="checkbox" name="region[]" value="22">
+                                                <label for="22" class="dif-category"><span>ჯავახეთი</span></label>
+                                             </div>
+                                          </div> 
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="23" class="checkbox" type="checkbox" name="region[]" value="23">
+                                                <label for="23" class="dif-category"><span>თბილისი</span></label>
+                                             </div>
+                                          </div> 
+                                    </div>
+
+                                    <div class="provinces">
+                                       <label class="title">დამატებითი კრიტერიუმები</label>
+
+                                          <div class="checkboxes _ex">
+                                             <div class="wrapper">
+                                                <input id="jeep_tour" class="checkbox" type="checkbox" name="region[]" value="40">
+                                                <label for="jeep_tour" class="dif-category"><span>ჯიპ-ტური</span></label>
+                                             </div>
+
+                                             <div class="wrapper">
+                                                <input id="bike_tour" class="checkbox" type="checkbox" name="region[]" value="41">
+                                                <label for="bike_tour" class="dif-category"><span>ველო-ტური</span></label>
+                                             </div>
+
+                                             <div class="wrapper">
+                                                <input id="horse_tour" class="checkbox" type="checkbox" name="region[]" value="42">
+                                                <label for="horse_tour" class="dif-category"><span>ცხენ-ტური</span></label>
+                                             </div>
+
+                                             <div class="wrapper">
+                                                <input id="child_tour" class="checkbox" type="checkbox" name="region[]" value="43">
+                                                <label for="child_tour" class="dif-category"><span>ბავშვებზე ადაპტირებული</span></label>
+                                             </div>
+                                          </div> 
+                                    </div>
+
+                                    <div class="text-right Marta">
+                                       <button class="filterBtn">ძებნა &amp; ფილტრი</button>
+                                    </div>
+                                 </div>
+               </form>
+            </div>
+         </div>
+      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <h3>ბისნა</h3>
+                            <p>
+                                <strong>ტელეფონი:</strong> +1 5589 55488 55<br>
+                                <strong>ელ. ფოსტა:</strong> info@example.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#" class="facebook"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="instagram"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="google-plus"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="#" class="linkedin"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">მთავარი</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">გიდები</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">ავტოგაქირავება</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">ტურები</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>ჩვენ შესახებ</h4>
+                        <ul class="t-2">
+                            <li><a href="">ბისნას შესახებ</a></li>
+                            <li><a href="">საქართველოს შესახებ</a></li>
+                            <li><a href="">როგორ დავჯავშნოთ ტური</a></li>
+                            <li><a href="">ხშირად დასმული შეკითხვები</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>ჩვენი სიახლეები</h4>
+                        <p>გამოიწერეთ ჩვენი გვერდი რადგან არ გამოგრჩეთ სიახლეები ამ გვერდზე</p>
+                        <form action="" method="post">
+                            <input type="email" name="email" placeholder="შეიყვანეთ თქვენი ელფოსტა"><input type="submit"
+                                value="გამოწერა">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Bisna</span></strong>. დაცულია საავტორო უფლებები
+            </div>
+            <div class="credits">
+                დამზადებულია <a href="https://bootstrapmade.com/">Web-Invent</a>-ის მიერ
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+
+    <!-- Vendor JS Files -->
+    <script src="Assets/Script/JS/bootstrap.bundle.min.js"></script>
+
+    <!-- CDN JS FILES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"
+        integrity="sha512-k2o1KZdvUi59PUXirfThShW9Gdwtk+jVYum6t7RmyCNAVyF9ozijFpvLEWmpgqkHuqSWpflsLf5+PEW6Lxy/wA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="Assets/Script/main.js"></script>
+
+
+</body>
+
+</html>

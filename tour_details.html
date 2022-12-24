@@ -89,7 +89,7 @@
 
             <button class="offcanva-btn s" id="search-btn">
                 <i class="fa-solid fa-magnifying-glass"></i>
-            </button>w
+            </button>
 
             <a class="offcanva-btn s" href="register.html" id="login_btn">
                 <i class="fa-solid fa-user"></i>
@@ -165,7 +165,7 @@
                             <div class="ico">
                                 <i class="fas fa-hashtag"></i>
                             </div>
-                            <div class="detail"><b>№</b><br>  015</div>
+                            <div class="detail"><b>№</b>015</div>
                         </div>
                         <div class="tour-box f-dlex align-items-center">
                             <div class="ico">
@@ -181,8 +181,9 @@
                             </div>
                             <div class="detail">
                                 <b>სირთულის კატეგორია: </b><br>
-                                <span class="dif-category">
+                                <span class="dif-category mb-3">
                                     A
+                                <button type="button" class="tip" data-mdb-toggle="modal" data-mdb-target="#sirtule_a">?</button>
                                 </span> 
                             </div>
                         </div>
@@ -206,7 +207,7 @@
                                 
                                 <span class="extrim">
                                     <b>უკიდურესი სიმაღლებრივი ცვალებადობა: </b><br>
-                                    <div class="tip" data-tip="<div>განსხვავება საფეხმავლო მარშრუტის ყველაზე დაბალ და ყველაზე მაღალ წერტილებს შორის.">?</div>
+                                    <button type="button" class="tip" data-mdb-toggle="modal" data-mdb-target="#extrim">?</button>
                                 </span> 
                                 უმნიშვნელო
                             </div>
@@ -539,6 +540,36 @@
         </div>
     </div>
 
+
+    <!-- extrim -->
+<div class="modal fade" id="extrim" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">უმნიშვნელო:</h5>
+          <button type="button" class="clos" data-mdb-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body">განსხვავება საფეხმავლო მარშრუტის ყველაზე დაბალ და ყველაზე მაღალ წერტილებს შორის.</div>
+      </div>
+    </div>
+  </div>
+
+      <!-- სირთულის კატეგორია -->
+<div class="modal fade" id="sirtule_a" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">უმნიშვნელო:</h5>
+          <button type="button" class="clos" data-mdb-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body">განსხვავება საფეხმავლო მარშრუტის ყველაზე დაბალ და ყველაზე მაღალ წერტილებს შორის.</div>
+      </div>
+    </div>
+  </div>
    
 
     <!-- ======= Footer ======= -->

@@ -121,6 +121,11 @@ body.dark {
     padding: 10px !important;
 }
 
+.Moding{
+    height: 95%;
+    border-radius: 20px;
+}
+
 .form-label {
     color: var(--text-color-1);
 }
@@ -249,8 +254,8 @@ body.dark {
     position: fixed;
     visibility: hidden;
     opacity: 0;
-    right: 15px;
-    bottom: 15px;
+    left: 20px;
+    bottom: 20px;
     z-index: 996;
     background: var(--Main-color);
     width: 40px;
@@ -1993,11 +1998,16 @@ section {
     padding: 0 0 30px 0;
     color: var(--text-color-1);
     font-size: 14px;
+    width: 98%;
+    margin-bottom: 10px !important;
+    border-radius: 25px;
+    margin: auto;
 }
 
 #footer .footer-top {
     background: var(--bg-color-1);
     padding: 60px 0 30px 0;
+    border-radius: 25px;
 }
 
 #footer .footer-top .footer-info {
@@ -2027,7 +2037,7 @@ section {
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
-    border-radius: 4px;
+    border-radius: 50%;
     text-align: center;
     width: 36px;
     height: 36px;
@@ -2726,7 +2736,7 @@ section {
 	opacity: 0;
 }
 .tours-section .box:hover .photo{
-	transform: scale(.9);
+	transform: scale(0.95);
     border-radius: 20px;
 }
 .tours-section .box:hover .photo::before{
@@ -2824,8 +2834,6 @@ margin-left: -25px;
 }
 .dif-category .tip{
     position: absolute;
-    width: 18px;
-    height: 18px;
     font-size: 9px;
     line-height: 25px;
     font-weight: 600;
@@ -2853,12 +2861,11 @@ margin-left: -25px;
 
 .extrim .tip{
 	position: absolute;
-	width:  14px;
-	height: 14px;
-	font-size: 8px;
+	font-size: 9px;
 	text-align:center;
 	line-height: 15px;
-	background-color: #000;
+    border: none;
+	background-color: var(--Main-color);
 	border-radius: 50%;
     top: 23%;
     transform: translateY(50%);
@@ -2868,9 +2875,10 @@ margin-left: -25px;
 	opacity: 1;
 	visibility: visible;
 }
-.extrim:hover .tip{
+.extrim:hover .tip:hover{
 	opacity: 1;
 	visibility: visible;
+    background-color: var(--hover);
 }
 
 .tours-section._inner{
@@ -3070,10 +3078,14 @@ margin-left: -25px;
     display: block !important;
     margin-top: 15px;
 }
+
+.modal-dialog{
+    border-radius: 20px !important;
+}
 .min-title{
 	font-size: 12px;
 	margin-bottom: 10px;
-	color: #666666;
+	color: var(--text-color-1);
     text-align: center;
 }
 .provinces .dif-category{

@@ -30,7 +30,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-    width: .5rem;
+    width: .4rem;
 }
 
 html::-webkit-scrollbar-track {
@@ -39,6 +39,7 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
     background: var(--Main-color);
+    border-radius: 50px;
 }
 
 .r-2 {
@@ -2869,6 +2870,7 @@ margin-left: -25px;
 	border-radius: 50%;
     top: 23%;
     transform: translateY(50%);
+    border: 2px solid var(--bg-color-1);
     color: #fff;
     right: 90px;
 	transition: .2s;

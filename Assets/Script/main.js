@@ -316,6 +316,7 @@
             }
         }
     });
+    
 
      /**
      * guide slider
@@ -368,6 +369,40 @@
                 navigation: {
                   nextEl: ".swiper-b-n",
                   prevEl: ".swiper-b-p",
+                },
+            
+                breakpoints:{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    520: {
+                        slidesPerView: 2,
+                    },
+                    950: {
+                        slidesPerView: 3,
+                    },
+                },
+              });
+
+
+              /**
+     * tour slider
+     */
+            var swiper = new Swiper(".slide-contentss", {
+                slidesPerView: 3,
+                spaceBetween: 25,
+                loop: true,
+                centerSlide: 'true',
+                fade: 'true',
+                grabCursor: 'true',
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                  dynamicBullets: true,
+                },
+                navigation: {
+                  nextEl: ".swiper-b-nn",
+                  prevEl: ".swiper-b-pp",
                 },
             
                 breakpoints:{

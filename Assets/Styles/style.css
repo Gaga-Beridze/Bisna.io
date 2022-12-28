@@ -122,17 +122,33 @@ body.dark {
     padding: 10px !important;
 }
 
-.Moding{
-    height: 95%;
-    border-radius: 20px;
-}
-
 .form-label {
     color: var(--text-color-1);
 }
 
 .m-w{
     margin-top: -15px;
+}
+
+.elem {
+    display: inline-block;
+    font-size: 0;
+    width: 10%;
+    border: 10px solid transparent;
+    border-bottom: none;
+    background: var(--bg-color-1);
+    height: auto;
+    background-clip: padding-box;
+}
+
+.elem > span {
+    display: block;
+    cursor: pointer;
+    height: 0;
+    padding-bottom: 70%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
 }
 
 /*--------------------------------------------------------------
@@ -1411,6 +1427,12 @@ section {
     overflow: hidden;
     border-radius: 25px;
   }
+
+  .slide-contentss{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
   .card{
     border-radius: 25px;
     background-color: var(--bg-color-1);
@@ -1641,6 +1663,13 @@ section {
     right: 0;
   }
   .swiper-b-p {
+    left: 0;
+  }
+
+  .swiper-b-nm{
+    right: 0;
+  }
+  .swiper-b-pp {
     left: 0;
   }
   @media screen and (max-width: 768px) {
@@ -1989,7 +2018,16 @@ section {
     background: var(--hover);
 }
 
-
+.other-tours
+{
+    border-radius: 20px;
+    width: 97%;
+    margin: auto;
+    background-color: var(--bg-color-1);
+}
+.o{
+    background-color: var(--bg-color-2) !important;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1999,9 +2037,6 @@ section {
     padding: 0 0 30px 0;
     color: var(--text-color-1);
     font-size: 14px;
-    width: 98%;
-    margin-bottom: 10px !important;
-    border-radius: 25px;
     margin: auto;
 }
 

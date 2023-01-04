@@ -25,7 +25,6 @@
 
 html {
     overflow-x: hidden;
-    scroll-padding-top: 7rem;
     scroll-behavior: smooth;
 }
 
@@ -468,12 +467,6 @@ body.dark {
         width: 30px !important;
         height: 30px !important;
     }
-}
-
-#header.header-scrolled {
-    top: 0;
-    width: 100%;
-    border-radius: 0px !important;
 }
 
 .logo {
@@ -948,6 +941,17 @@ body.dark {
     }
 }
 
+@media (max-width: 768px) {
+    #hero {
+        width: 100%;
+    }
+
+    #hero .carousel-control-prev,
+    #hero .carousel-control-next {
+        display: none !important;
+    }
+}
+
 @media (min-width: 1024px) {
 
     #hero .carousel-control-prev,
@@ -955,6 +959,7 @@ body.dark {
         width: 5%;
     }
 }
+
 
 @media (max-height: 500px) {
     #hero {
